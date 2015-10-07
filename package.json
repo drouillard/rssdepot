@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/drouillard/rssdepot/issues"
   },
-  "homepage": "https://github.com/drouillard/rssdepot#readme"
+  "homepage": "https://github.com/drouillard/rssdepot#readme",
+  "dependencies": {
+    "clone": "^1.0.2",
+    "express": "^4.13.3",
+    "json-server": "^0.8.1"
+  }
 }
