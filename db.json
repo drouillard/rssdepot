@@ -1,0 +1,66 @@
+{
+  "feeds": [
+    {
+      "id": 1,
+      "name": "CNN Top Stories",
+      "slug": "cnn_top_stories",
+      "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
+      "websiteUrl": "http://www.cnn.com",
+      "category": "news"
+    },
+    {
+      "id": 2,
+      "name": "Huffington Post",
+      "slug": "huffington_post",
+      "url": "http: //feeds.huffingtonpost.com/c/35496/f/677045/index.rss",
+      "websiteUrl": "http: //www.huffingtonpost.com",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "Drudge Report",
+      "slug": "drudge_report",
+      "url": "http: //www.drudgereportfeed.com/rss.xml",
+      "websiteUrl": "http: //www.drudgereport.com",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "name": "Detroit Free Press",
+      "slug": "detroit_free_press",
+      "url": "http: //rssfeeds.freep.com/freep/home",
+      "websiteUrl": "http: //www.freep.com",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "name": "ESPN Top Stories",
+      "slug": "espn_top_stories",
+      "url": "http: //sports.espn.go.com/espn/rss/news",
+      "websiteUrl": "http: //www.espn.com",
+      "categoryId": 2
+    },
+    {
+      "id": 6,
+      "name": "The Hill Top Stories",
+      "slug": "the_hill_top_stories",
+      "url": "http: //thehill.com/rss/syndicator/19110",
+      "websiteUrl": "http: //www.thehill.com",
+      "categoryId": 3
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "news"
+    },
+    {
+      "id": 2,
+      "name": "sports"
+    },
+    {
+      "id": 3,
+      "name": "politics"
+    }
+  ]
+}
