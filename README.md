@@ -2,15 +2,19 @@
 
 A repository of RSS Feeds.
 
+## Accessing
+
+The depot can be accessed at [RSS Depot](https://rssdepot.herokuapp.com/feeds)
+
 ## Using RSS Depot
 
 Search for a feed. E.G. CNN
 
-    http://localhost:3000/feeds?q=cnn
+    https://rssdepot.herokuapp.com/feeds?q=cnn
 
 Include all Feeds in a given Category
 
-    http://localhost:3000/categories/1/?_embed=feeds
+    https://rssdepot.herokuapp.com/categories/1/?_embed=feeds
 
 ##Running Locally
 
