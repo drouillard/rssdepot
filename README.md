@@ -10,11 +10,11 @@ The depot can be accessed at [RSS Depot](https://rssdepot.herokuapp.com/feeds)
 
 Search for a feed. E.G. CNN
 
-    https://rssdepot.herokuapp.com/feeds?q=cnn
+[https://rssdepot.herokuapp.com/feeds?q=cnn](https://rssdepot.herokuapp.com/feeds?q=cnn)
 
 Include all Feeds in a given Category
 
-    https://rssdepot.herokuapp.com/categories/1/?_embed=feeds
+[https://rssdepot.herokuapp.com/categories/1/?_embed=feeds](https://rssdepot.herokuapp.com/categories/1/?_embed=feeds)
 
 ##Running Locally
 
