@@ -6,7 +6,6 @@ export default class Counter extends React.Component {
         this.state = {value: props.initialValue || 0};
     }
 
-
     componentDidMount() {
         const self = this;
         tick();
@@ -26,7 +25,9 @@ export default class Counter extends React.Component {
 
     render() {
         return (
-            <h1>{this.state.value}</h1>
+            <div className='container'>
+                <p className='left-align'>{this.state.value} Active Feeds in the Depot.</p>
+            </div>
         );
     }
 }
