@@ -4,7 +4,12 @@
   "description": "A depot of RSS feeds",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js",
+    "bundle:prod": "NODE_ENV=production browserify site.js -t babelify -g envify -g uglifyify > bundle.js",
+    "watch": "npm run watch:server & npm run watch:bundle & wait",
+    "watch:server": "nodemon --exec babel-node --ignore bundle.js -- index.js",
+    "watch:bundle": "watchify site.js -v -t babelify -g envify -p livereactload -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +27,25 @@
   },
   "homepage": "https://github.com/drouillard/rssdepot#readme",
   "dependencies": {
+    "alt": "^0.17.6",
+    "babel": "^5.8.23",
+    "browserify": "^11.2.0",
     "clone": "^1.0.2",
+    "envify": "^3.4.0",
     "express": "^4.13.3",
-    "json-server": "^0.8.1"
+    "json-server": "^0.8.1",
+    "keymirror": "^0.1.1",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "uglifyify": "^3.0.1",
+    "xhr": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-plugin-react-transform": "^1.1.1",
+    "babelify": "^6.3.0",
+    "livereactload": "^2.0.4",
+    "nodemon": "^1.7.3",
+    "react-proxy": "^1.1.1",
+    "watchify": "^3.4.0"
   }
 }
