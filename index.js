@@ -20,16 +20,22 @@ server.get('/', (req, res) => {
 <title>RSS Depot</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
 <link rel="stylesheet" href="/static/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
-<div id="app">
+
+    <main id="app">
         ${React.renderToString(<Application {...model} />)}
-</div>
-<script type="text/javascript">
+    </main>
+    <footer class='container'>
+        <p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
+    </footer>
+    <script type="text/javascript">
 window.INITIAL_MODEL = ${JSON.stringify(model)};
 </script>
 <script type="text/javascript" src="/static/bundle.js"></script>
-    </body>
+</body>
     </html>`);
 });
 

@@ -25,8 +25,8 @@ export default class Counter extends React.Component {
 
     render() {
         return (
-            <div className='container'>
-                <p className='left-align'>{this.state.value} Active Feeds in the Depot.</p>
+            <div>
+                <p>{this.state.value} Active Feeds in the Depot.</p>
             </div>
         );
     }

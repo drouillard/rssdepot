@@ -9,12 +9,13 @@ export default class App extends Component {
     render() {
         const {feeds} = this.props;
         return (
-            <div className='container'>
+                <div className='container'>
                 <Header />
                 <SearchBox />
                 <SearchResults feeds={feeds}/>
-                <Footer />
-            </div>
+
+                </div>
+
         );
     }
 }
@@ -23,7 +24,7 @@ class Header extends Component {
     render() {
         const {counter1} = this.props;
         return (
-            <div className='blue white-text center-align'>
+            <div className='blue-text center-align'>
                 <h1>RSS Depot</h1>
                 <Counter
                     initialValue={counter1}
@@ -33,14 +34,3 @@ class Header extends Component {
         );
     }
 }
-
-const Footer = React.createClass({
-
-    render() {
-        return (
-            <footer>
-                <p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
-            </footer>
-        );
-    }
-});
