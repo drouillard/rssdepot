@@ -45,11 +45,11 @@ export default class SearchBox extends React.Component {
 
         return (
             <div>
-                <table className="table striped centered">
+                <table className="table striped">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>URL</th>
+                        <th className='center-align'>Name</th>
+                        <th className='center-align'>URL</th>
                     </tr>
                     </thead>
                     <tbody>

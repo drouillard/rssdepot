@@ -44,10 +44,10 @@ export default class SearchBox extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <div className='row'>
-                    <div className="input-field col s8">
+                    <div className="input-field col s10">
                         <input value={message} type='text' placeholder='Search for RSS Feeds' onChange={this.handleChange.bind(this)} ></input>
                     </div>
-                        <div className="input-field col s4">
+                        <div className="input-field col s2">
                             <input className='btn blue' type='submit' value='Search'/>
                             </div>
                         </div>
