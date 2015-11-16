@@ -1,11 +1,10 @@
-const React = require("react");
+const React = require('react');
 const ApiStore = require('../stores/api-store');
 
 export default class SearchBox extends React.Component {
     constructor(props) {
         super(props);
         this.state = { results: props.feeds || []};
-      //  this.state = ApiStore.getState();
         this.onChange = this.onChange.bind(this);
     }
 
@@ -18,12 +17,10 @@ export default class SearchBox extends React.Component {
     }
 
     onChange(){
-        console.log('Search Results... updating state');
         this.setState( ApiStore.getState() );
     }
 
     componentWillMount() {
-        console.log('I am listening');
         ApiStore.listen(this.onChange);
     }
 
@@ -45,7 +42,7 @@ export default class SearchBox extends React.Component {
 
         return (
             <div>
-                <table className="table striped">
+                <table className='table striped'>
                     <thead>
                     <tr>
                         <th className='center-align'>Name</th>

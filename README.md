@@ -4,7 +4,7 @@ A repository of RSS Feeds.
 
 ## Accessing
 
-The depot can be accessed at [RSS Depot](https://rssdepot.herokuapp.com/feeds)
+The depot can be accessed at [RSS Depot](https://rssdepot.herokuapp.com/)
 
 ## Using RSS Depot
 

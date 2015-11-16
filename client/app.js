@@ -6,7 +6,9 @@ const React   = require('react'),
 const {Component} = React;
 
 export default class App extends Component {
+
     render() {
+
         const {feeds} = this.props;
         return (
                 <div className='container'>
@@ -21,7 +23,9 @@ export default class App extends Component {
 }
 
 class Header extends Component {
+
     render() {
+
         const {counter1} = this.props;
         return (
             <div className='blue-text center-align'>

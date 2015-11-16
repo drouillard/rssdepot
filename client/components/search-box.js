@@ -17,15 +17,9 @@ export default class SearchBox extends React.Component {
         console.log('The results... ' + results);
     }
 
-    //componentDidMount(){
-    //    ApiActions.searchFeeds('');
-    //}
-
     handleChange(event){
 
-        console.log('This event ->', event);
         const query = event.target.value;
-        console.log('searchBox search term = ', query);
         this.setState({message: query} );
         ApiActions.searchFeeds(query);
     }
